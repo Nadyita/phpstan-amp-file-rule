@@ -1,0 +1,5 @@
+services:
+  -
+    class: Nadyita\PHPStan\Rules\UseAsyncFunctionsRule
+    tags:
+      - phpstan.rules.rule
