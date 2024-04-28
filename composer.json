@@ -9,18 +9,12 @@
             "email": "nadyita@hodorraid.org"
         }
     ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/Nadybot/Nadystyle.git"
-        }
-    ],
     "require": {
         "php": "^8.1.17",
         "phpstan/phpstan": "^1.10"
     },
     "require-dev": {
-        "nadybot/nadystyle": "dev-main",
+        "nadybot/nadystyle": "^1.0.0",
         "composer-phar/php-cs-fixer": "^3.51.0",
         "thecodingmachine/safe": "^1.0 || ^2.0",
         "nikic/php-parser": "^4.13.0"

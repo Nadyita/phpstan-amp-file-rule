@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49cf95db8781a6fb588888e33451ee70",
+    "content-hash": "60b07e3542763832d0d4af8819fb5b26",
     "packages": [
         {
             "name": "phpstan/phpstan",
@@ -97,18 +97,23 @@
         },
         {
             "name": "nadybot/nadystyle",
-            "version": "dev-main",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nadybot/Nadystyle.git",
-                "reference": "53b299fca4970fe06af92ccd02865015acac7a13"
+                "reference": "8a492174cfe1f8c045218015faf0ab275f557955"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nadybot/Nadystyle/zipball/8a492174cfe1f8c045218015faf0ab275f557955",
+                "reference": "8a492174cfe1f8c045218015faf0ab275f557955",
+                "shasum": ""
             },
             "require": {
                 "composer-phar/php-cs-fixer": "^3.51.0",
                 "php": ">=8.1.17",
                 "squizlabs/php_codesniffer": "^3.8"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -116,6 +121,7 @@
                     "PHP_CodeSniffer\\Standards\\": "style"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "AGPL-3.0-or-later"
             ],
@@ -128,7 +134,11 @@
                 }
             ],
             "description": "Code style configuration for all Nadybot PHP projects",
-            "time": "2024-04-13T07:20:53+00:00"
+            "support": {
+                "issues": "https://github.com/Nadybot/Nadystyle/issues",
+                "source": "https://github.com/Nadybot/Nadystyle/tree/1.0.0"
+            },
+            "time": "2024-04-28T07:24:15+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -188,16 +198,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.9.1",
+            "version": "3.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "267a4405fff1d9c847134db3a3c92f1ab7f77909"
+                "reference": "aac1f6f347a5c5ac6bc98ad395007df00990f480"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/267a4405fff1d9c847134db3a3c92f1ab7f77909",
-                "reference": "267a4405fff1d9c847134db3a3c92f1ab7f77909",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/aac1f6f347a5c5ac6bc98ad395007df00990f480",
+                "reference": "aac1f6f347a5c5ac6bc98ad395007df00990f480",
                 "shasum": ""
             },
             "require": {
@@ -264,7 +274,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-03-31T21:03:09+00:00"
+            "time": "2024-04-23T20:25:34+00:00"
         },
         {
             "name": "thecodingmachine/safe",
@@ -408,9 +418,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "nadybot/nadystyle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
