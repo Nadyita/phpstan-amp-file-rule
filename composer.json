@@ -11,13 +11,13 @@
     ],
     "require": {
         "php": "^8.1.17",
-        "phpstan/phpstan": "^1.10"
+        "phpstan/phpstan": "^1 || ^2"
     },
     "require-dev": {
         "nadybot/nadystyle": "^1.0.0",
         "composer-phar/php-cs-fixer": "^3.51.0",
-        "thecodingmachine/safe": "^1.0 || ^2.0",
-        "nikic/php-parser": "^4.13.0"
+        "thecodingmachine/safe": "^1.0 || ^2.0 || ^3.0",
+        "nikic/php-parser": "^4 || ^5"
     },
     "autoload": {
         "psr-4": {
