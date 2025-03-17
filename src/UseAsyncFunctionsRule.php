@@ -2,6 +2,7 @@
 
 namespace Nadyita\PHPStan\Rules;
 
+use Nadyita\PHPStan\Rules\Error\UseAsyncFunctionRuleError;
 use PhpParser\Node;
 use PHPStan\Analyser\Scope;
 use PHPStan\Rules\Rule;
@@ -19,7 +20,7 @@ class UseAsyncFunctionsRule implements Rule {
 	/**
 	 * @param Node\Expr\FuncCall $node
 	 *
-	 * @return string[]
+	 * @return UseAsyncFunctionRuleError[]
 	 */
 	public function processNode(Node $node, Scope $scope): array {
 		if (!$node->name instanceof Node\Name) {
@@ -68,7 +69,7 @@ class UseAsyncFunctionsRule implements Rule {
 
 		$replacement = $syncFunctions[$functionName] ?? $syncFunctions[str_replace('Safe\\', '', $functionName)];
 		if (isset($replacement)) {
-			return ["Function {$functionName} has an async counterpart in {$replacement}."];
+			return [new UseAsyncFunctionRuleError("Function {$functionName} has an async counterpart in {$replacement}.", $node->getStartLine())];
 		}
 
 		return [];
